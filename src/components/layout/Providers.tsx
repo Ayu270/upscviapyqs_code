@@ -57,10 +57,12 @@ export default function Providers({ children }: { children: React.ReactNode }) {
   if (!mounted) {
     // Render children with a placeholder or basic layout before hydration
     return (
-      <ThemeProvider theme={lightTheme}>
-        <CssBaseline />
-        {children}
-      </ThemeProvider>
+      <QueryClientProvider client={queryClient}>
+        <ThemeProvider theme={lightTheme}>
+          <CssBaseline />
+          {children}
+        </ThemeProvider>
+      </QueryClientProvider>
     );
   }
 

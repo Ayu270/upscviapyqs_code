@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import {
   Box,
@@ -40,7 +40,7 @@ const ITEMS_PER_PAGE = 10;
 const ALL_YEARS = Array.from({ length: 14 }, (_, i) => 2026 - i); // 2026 down to 2013
 const FREE_YEARS = [2025, 2026];
 
-export default function PrelimsExplorer() {
+function PrelimsExplorerContent() {
   const searchParams = useSearchParams();
   const { data: questions, isLoading, error } = usePrelims();
   const {
@@ -908,5 +908,17 @@ function QuestionCard({
         )}
       </CardContent>
     </Card>
+  );
+}
+
+export default function PrelimsExplorer() {
+  return (
+    <Suspense fallback={
+      <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', py: 15, flex: 1 }}>
+        <CircularProgress color="primary" />
+      </Box>
+    }>
+      <PrelimsExplorerContent />
+    </Suspense>
   );
 }
