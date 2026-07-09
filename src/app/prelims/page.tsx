@@ -629,7 +629,7 @@ export default function PrelimsExplorer() {
                 isDone={isDone}
                 chosenOption={chosenOption}
                 attempt={attempt}
-                onSelectOption={(letter) => {
+                onSelectOption={(letter: string) => {
                   if (isDone) return;
                   // If not attempted, record it
                   const correct = letter === q.correct_answer;
