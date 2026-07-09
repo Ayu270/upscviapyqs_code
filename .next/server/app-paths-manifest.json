@@ -1,8 +1,0 @@
-{
-  "/page": "app/page.js",
-  "/mains/page": "app/mains/page.js",
-  "/prelims/page": "app/prelims/page.js",
-  "/frameworks/page": "app/frameworks/page.js",
-  "/optional/page": "app/optional/page.js",
-  "/practice/page": "app/practice/page.js"
-}
