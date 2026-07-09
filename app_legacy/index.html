@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UPSC via PYQs — Learn the exam by dissecting every Previous Year Question</title>
+<script src="store.js"></script>
+<style>
+:root{
+  --navy:#16223E;--navy2:#1E3358;--gold:#D4A843;--gold-d:#B8922A;
+  --cream:#FAF7F0;--bg:#F0E8D6;--card:#FFFFFF;--text:#1E1E2E;--muted:#7A7A8A;
+  --border:#E5DECF;--green:#1A8040;--radius:12px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text)}
+.header{background:var(--navy);color:#fff;padding:16px 24px;display:flex;align-items:center;justify-content:space-between;border-bottom:3px solid var(--gold);gap:16px;flex-wrap:wrap}
+.header h1{font-size:20px;font-weight:800}.header h1 span{color:var(--gold)}
+.header .tag{font-size:11px;color:rgba(255,255,255,.6)}
+.nav{display:flex;gap:6px;flex-wrap:wrap}
+.nav a{font-size:12px;font-weight:700;color:rgba(255,255,255,.7);text-decoration:none;padding:6px 12px;border-radius:20px;border:1.5px solid transparent}
+.nav a:hover{color:#fff;border-color:rgba(255,255,255,.2)}
+.nav a.active{color:var(--navy);background:var(--gold);border-color:var(--gold)}
+.wrap{max-width:960px;margin:0 auto;padding:26px 24px}
+
+/* slim personal strip (returning users) */
+.strip{display:none;align-items:center;gap:8px 18px;flex-wrap:wrap;background:#fff;border:1.5px solid var(--border);border-left:4px solid var(--gold);border-radius:10px;padding:12px 16px;margin-bottom:18px;font-size:13px}
+.strip.show{display:flex}
+.strip .s{color:var(--muted);font-weight:600}
+.strip .s b{color:var(--navy);font-weight:800}
+.strip .sp{flex:1}
+.strip a{font-size:12.5px;font-weight:700;text-decoration:none;color:var(--gold-d)}
+.strip a.btnlink{background:var(--navy);color:#fff;padding:7px 12px;border-radius:7px}
+.strip a:hover{opacity:.9}
+
+/* hero — the one bold block */
+.hero{background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;border-radius:var(--radius);padding:38px 34px;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;right:-70px;top:-70px;width:240px;height:240px;background:radial-gradient(circle,rgba(212,168,67,.20),transparent 70%)}
+.hero h2{font-size:27px;font-weight:800;line-height:1.25;max-width:640px}
+.hero h2 span{color:var(--gold)}
+.hero p{font-size:14.5px;color:rgba(255,255,255,.78);margin:12px 0 20px;max-width:600px;line-height:1.55}
+.hsearch{display:flex;gap:8px;max-width:540px;flex-wrap:wrap;margin-bottom:16px}
+.hsearch input{flex:1;min-width:220px;border:none;border-radius:9px;padding:12px 14px;font-size:14px;background:#fff;color:var(--text)}
+.hsearch input:focus{outline:2px solid var(--gold)}
+.cta{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.btn{padding:12px 20px;border:none;border-radius:9px;font-size:14px;font-weight:800;cursor:pointer;background:linear-gradient(135deg,var(--gold),var(--gold-d));color:var(--navy);text-decoration:none;display:inline-block}
+.btn.ghost{background:rgba(255,255,255,.08);color:#fff;border:1.5px solid rgba(255,255,255,.28);font-weight:700}
+.btn.ghost:hover{background:rgba(255,255,255,.16)}
+.cover{margin-top:18px;font-size:12px;color:rgba(255,255,255,.6);letter-spacing:.2px}
+.cover b{color:rgba(255,255,255,.92);font-weight:700}
+
+/* section heading */
+h3.sec{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.7px;color:var(--muted);margin:30px 0 12px}
+
+/* surfaces — calm white cards */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}
+.surf{display:block;background:var(--card);border:1.5px solid var(--border);border-radius:var(--radius);padding:18px;text-decoration:none;color:inherit;transition:.15s}
+.surf:hover{border-color:var(--gold);box-shadow:0 6px 20px rgba(212,168,67,.12);transform:translateY(-3px)}
+.surf .ic{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:11px;background:linear-gradient(135deg,#F7F0DC,#F2E6C4);border:1px solid var(--border);font-size:20px}
+.surf:hover .ic{border-color:var(--gold)}
+.surf .t{font-size:15.5px;font-weight:800;color:var(--navy);margin:11px 0 4px}
+.surf .d{font-size:13px;color:var(--muted);line-height:1.5;min-height:38px}
+.surf .ct{font-size:11px;color:var(--gold-d);margin-top:10px;font-weight:800;text-transform:uppercase;letter-spacing:.4px}
+
+/* why — light numbered steps */
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.why .item{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px}
+.why .n{display:inline-flex;align-items:center;justify-content:center;width:25px;height:25px;border-radius:50%;background:var(--navy);color:var(--gold);font-weight:800;font-size:12px;margin-bottom:9px}
+.why .h{font-size:14px;font-weight:800;color:var(--navy);margin-bottom:5px}
+.why .b{font-size:12.5px;color:var(--muted);line-height:1.55}
+
+/* coverage band (navy) */
+.band{display:flex;flex-wrap:wrap;gap:12px 34px;justify-content:center;background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;border-radius:var(--radius);padding:24px;margin-top:30px;position:relative;overflow:hidden}
+.band:before{content:"";position:absolute;left:-50px;bottom:-60px;width:200px;height:200px;background:radial-gradient(circle,rgba(212,168,67,.16),transparent 70%)}
+.band .it{text-align:center;font-size:12px;color:rgba(255,255,255,.62)}
+.band .it b{display:block;color:var(--gold);font-size:23px;font-weight:800;margin-bottom:1px}
+
+footer{text-align:center;color:var(--muted);font-size:12px;padding:24px 10px 12px;line-height:1.7;margin-top:16px}
+
+@media(max-width:760px){.grid,.why{grid-template-columns:1fr 1fr}.hero{padding:28px 22px}.hero h2{font-size:23px}}
+@media(max-width:500px){.grid,.why{grid-template-columns:1fr}.wrap{padding:18px}.surf .d{min-height:0}}
+</style>
+<link rel="stylesheet" href="ui.css">
+</head>
+<body>
+<div class="header">
+  <div><a href="index.html" class="brand"><h1>UPSC via <span>PYQs</span></h1></a><div class="tag">Learn the exam by dissecting its past</div></div>
+  <div class="nav">
+    <a href="index.html" class="active">Home</a>
+    <a href="prelims.html">Prelims</a>
+    <a href="mains.html">Mains</a>
+    <a href="optional.html">Optional</a>
+    <a href="frameworks.html">Frameworks</a>
+    <a href="practice.html">Practice</a>
+    <a href="dashboard.html">Dashboard</a>
+  </div>
+</div>
+
+<div class="wrap">
+  <!-- slim personal strip (returning users only) -->
+  <div id="strip" class="strip"></div>
+
+  <!-- hero -->
+  <div class="hero">
+    <h2>Crack UPSC by dissecting <span>every Previous Year Question</span>.</h2>
+    <p>Prelims autopsies, Mains &amp; Optional model answers, syllabus frameworks, and timed practice — attempt-first, free, with your progress saved on your device.</p>
+    <form class="hsearch" onsubmit="return goSearch(event)">
+      <input id="q" placeholder="Search a topic… e.g. Hormuz, judicial review, monsoon">
+      <button class="btn" type="submit">Search</button>
+    </form>
+    <div class="cta">
+      <a class="btn" href="prelims.html">Start with Prelims →</a>
+      <a class="btn ghost" href="practice.html">Take a practice test</a>
+    </div>
+  </div>
+
+  <!-- surfaces -->
+  <h3 class="sec">Explore</h3>
+  <div class="grid">
+    <a class="surf" href="prelims.html"><div class="ic">📝</div><div class="t">Prelims Explorer</div><div class="d">Every MCQ with a full answer autopsy — attempt first, then see why each option is right or wrong.</div><div class="ct">1,400 questions · 2013–2026</div></a>
+    <a class="surf" href="mains.html"><div class="ic">🖋️</div><div class="t">Mains Explorer</div><div class="d">GS1–4 &amp; Essay questions with structured model answers and case-study breakdowns.</div><div class="ct">1,115 model answers</div></a>
+    <a class="surf" href="optional.html"><div class="ic">📚</div><div class="t">Optional Explorer</div><div class="d">Public Administration Paper 1 &amp; 2 — full answers, thinkers and case studies.</div><div class="ct">728 answers</div></a>
+    <a class="surf" href="frameworks.html"><div class="ic">🧭</div><div class="t">Frameworks</div><div class="d">Topic frameworks across the syllabus, subject- &amp; syllabus-wise, so you never go blank.</div><div class="ct">29 frameworks</div></a>
+    <a class="surf" href="practice.html"><div class="ic">⏱️</div><div class="t">Practice</div><div class="d">Scored Prelims tests and timed Mains/Optional answer-writing with a self-check.</div><div class="ct">Tests &amp; drills</div></a>
+    <a class="surf" href="dashboard.html"><div class="ic">📊</div><div class="t">Dashboard</div><div class="d">Your streak, accuracy by subject &amp; year, bookmarks and revision list.</div><div class="ct">Your progress</div></a>
+  </div>
+
+  <!-- why -->
+  <h3 class="sec">Why it works</h3>
+  <div class="why">
+    <div class="item"><div class="n">1</div><div class="h">Attempt-first</div><div class="b">You commit to an answer before the explanation and decision-rule are revealed — the exam skill is deciding under uncertainty.</div></div>
+    <div class="item"><div class="n">2</div><div class="h">Frameworks, not blank pages</div><div class="b">Reusable, sectioned frameworks turn an unseen Mains question into a structure you can fill.</div></div>
+    <div class="item"><div class="n">3</div><div class="h">Practise &amp; track</div><div class="b">Bookmark, revise, take timed tests; your streak and accuracy build up locally — free, no account.</div></div>
+  </div>
+
+  <div class="band">
+    <div class="it"><b>13</b>years · 2013–2026</div>
+    <div class="it"><b>3,243</b>questions</div>
+    <div class="it"><b>29</b>frameworks</div>
+    <div class="it"><b>100%</b>human-written</div>
+  </div>
+
+  <footer>Free · content is human-written and reviewed · progress is saved only on this device (no login, no tracking).</footer>
+</div>
+
+<script>
+function goSearch(e){e.preventDefault();const q=document.getElementById("q").value.trim();location.href="prelims.html"+(q?("?q="+encodeURIComponent(q)):"");return false;}
+(function(){
+  const st=Store.stats([]), sk=Store.streak(), c=Store.counts();
+  if(!(st.total>0 || c.bookmarks>0 || c.revise>0)) return;   // new users: no strip, hero leads
+  const stat=(v,l)=>'<span class="s"><b>'+v+'</b> '+l+'</span>';
+  document.getElementById("strip").innerHTML=
+    (sk.count>0?'<span class="s">🔥 <b>'+sk.count+'</b>-day streak</span>':'')+
+    stat(st.total,'attempted')+stat(st.accuracy+'%','accuracy')+stat(c.bookmarks,'★')+stat(c.revise,'⚑')+
+    '<span class="sp"></span>'+
+    '<a class="btnlink" href="dashboard.html">Dashboard →</a>';
+  document.getElementById("strip").classList.add("show");
+})();
+</script>
+</body>
+</html>

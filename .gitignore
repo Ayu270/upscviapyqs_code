@@ -1,0 +1,20 @@
+# ── secrets — NEVER commit ──────────────────────────────────
+# (the leaked Notion token is in a FILENAME under normalizer/, so exclude the whole folder)
+normalizer/
+.env
+.env.*
+*.secret
+
+# ── large raw Notion dumps (~216MB) — not needed downstream ──
+data/raw_*.jsonl
+
+# ── backups / temp / scratch ────────────────────────────────
+*.bak
+_*
+
+# ── tooling / OS ────────────────────────────────────────────
+.claude/
+.DS_Store
+__pycache__/
+*.pyc
+node_modules

@@ -1,0 +1,24 @@
+/* Multi-select dropdown (dependent/faceted) — shared across all UPSCviaPYQs pages.
+   Relies on the page's :root CSS variables (--navy, --gold, --cream, --border, --muted …). */
+.msel{position:relative;display:inline-block}
+.msel-btn{border:1.5px solid var(--border);border-radius:8px;padding:8px 12px;font-size:13px;background:var(--cream);color:var(--text);cursor:pointer;font-weight:600;display:inline-flex;align-items:center;gap:4px;white-space:nowrap}
+.msel-btn:hover{border-color:var(--gold)}
+.msel-btn.active{border-color:var(--gold);background:#F7F0DC;color:var(--navy)}
+.msel-cnt{color:var(--gold-d);font-weight:800}
+.msel-ar{font-size:10px;color:var(--muted)}
+.msel-panel{display:none;position:absolute;z-index:40;top:calc(100% + 4px);left:0;min-width:210px;max-width:320px;background:#fff;border:1.5px solid var(--border);border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,.14);padding:6px}
+.msel-actions{display:flex;gap:14px;padding:4px 8px 7px;border-bottom:1px solid var(--border);margin-bottom:4px}
+.msel-actions span{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--gold-d);cursor:pointer}
+.msel-actions span:hover{text-decoration:underline}
+.msel-list{max-height:264px;overflow:auto}
+/* .msel-list .msel-opt (0,2,0) outranks page rules like .field label / .filters input (0,1,1)
+   that would otherwise leak onto these option rows (each option is a <label> inside .field) */
+.msel-list .msel-opt{display:flex;align-items:flex-start;gap:8px;padding:6px 8px;margin:0;font-size:13px;font-weight:500;line-height:1.35;text-transform:none;letter-spacing:0;color:var(--text);border-radius:6px;cursor:pointer}
+.msel-list .msel-opt:hover{background:var(--cream)}
+.msel-list input[type="checkbox"]{flex:0 0 auto;-webkit-appearance:auto;appearance:auto;width:16px;height:16px;min-width:0;margin:1px 0 0;padding:0;border:none;border-radius:0;background:none;box-shadow:none;accent-color:var(--gold-d);cursor:pointer}
+.msel-list .msel-opt span{flex:1 1 auto;min-width:0;word-break:break-word}
+.msel-empty{padding:8px;color:var(--muted);font-size:12px}
+/* full-width inside a form .field (e.g. Practice setup), matching the old <select> */
+.field .msel{display:block}
+.field .msel-btn{width:100%;justify-content:space-between;padding:9px 12px;font-size:14px}
+.field .msel-panel{min-width:0;max-width:none;width:100%}

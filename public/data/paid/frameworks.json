@@ -1,0 +1,79 @@
+[
+  {
+    "id": "fw-mock-0001-0000-000000000000",
+    "title": "[MOCK] Framework 2",
+    "path": "subject/framework-2",
+    "axis": "theme",
+    "body_md": "# [MOCK] Framework 2\n\n- This is synthetic framework content for development.\n  - **Point A**: placeholder.\n  - **Point B**: placeholder.\n\n> Real framework content is not included in this repo."
+  },
+  {
+    "id": "fw-mock-0002-0000-000000000000",
+    "title": "[MOCK] Framework 3",
+    "path": "subject/framework-3",
+    "axis": "skill",
+    "body_md": "# [MOCK] Framework 3\n\n- This is synthetic framework content for development.\n  - **Point A**: placeholder.\n  - **Point B**: placeholder.\n\n> Real framework content is not included in this repo."
+  },
+  {
+    "id": "fw-mock-0003-0000-000000000000",
+    "title": "[MOCK] Framework 4",
+    "path": "subject/framework-4",
+    "axis": "subject",
+    "body_md": "# [MOCK] Framework 4\n\n- This is synthetic framework content for development.\n  - **Point A**: placeholder.\n  - **Point B**: placeholder.\n\n> Real framework content is not included in this repo."
+  },
+  {
+    "id": "fw-mock-0004-0000-000000000000",
+    "title": "[MOCK] Framework 5",
+    "path": "subject/framework-5",
+    "axis": "theme",
+    "body_md": "# [MOCK] Framework 5\n\n- This is synthetic framework content for development.\n  - **Point A**: placeholder.\n  - **Point B**: placeholder.\n\n> Real framework content is not included in this repo."
+  },
+  {
+    "id": "fw-mock-0005-0000-000000000000",
+    "title": "[MOCK] Framework 6",
+    "path": "subject/framework-6",
+    "axis": "skill",
+    "body_md": "# [MOCK] Framework 6\n\n- This is synthetic framework content for development.\n  - **Point A**: placeholder.\n  - **Point B**: placeholder.\n\n> Real framework content is not included in this repo."
+  },
+  {
+    "id": "fw-mock-0006-0000-000000000000",
+    "title": "[MOCK] Framework 7",
+    "path": "subject/framework-7",
+    "axis": "subject",
+    "body_md": "# [MOCK] Framework 7\n\n- This is synthetic framework content for development.\n  - **Point A**: placeholder.\n  - **Point B**: placeholder.\n\n> Real framework content is not included in this repo."
+  },
+  {
+    "id": "fw-mock-0007-0000-000000000000",
+    "title": "[MOCK] Framework 8",
+    "path": "subject/framework-8",
+    "axis": "theme",
+    "body_md": "# [MOCK] Framework 8\n\n- This is synthetic framework content for development.\n  - **Point A**: placeholder.\n  - **Point B**: placeholder.\n\n> Real framework content is not included in this repo."
+  },
+  {
+    "id": "fw-mock-0008-0000-000000000000",
+    "title": "[MOCK] Framework 9",
+    "path": "subject/framework-9",
+    "axis": "skill",
+    "body_md": "# [MOCK] Framework 9\n\n- This is synthetic framework content for development.\n  - **Point A**: placeholder.\n  - **Point B**: placeholder.\n\n> Real framework content is not included in this repo."
+  },
+  {
+    "id": "fw-mock-0009-0000-000000000000",
+    "title": "[MOCK] Framework 10",
+    "path": "subject/framework-10",
+    "axis": "subject",
+    "body_md": "# [MOCK] Framework 10\n\n- This is synthetic framework content for development.\n  - **Point A**: placeholder.\n  - **Point B**: placeholder.\n\n> Real framework content is not included in this repo."
+  },
+  {
+    "id": "fw-mock-0010-0000-000000000000",
+    "title": "[MOCK] Framework 11",
+    "path": "subject/framework-11",
+    "axis": "theme",
+    "body_md": "# [MOCK] Framework 11\n\n- This is synthetic framework content for development.\n  - **Point A**: placeholder.\n  - **Point B**: placeholder.\n\n> Real framework content is not included in this repo."
+  },
+  {
+    "id": "fw-mock-0011-0000-000000000000",
+    "title": "[MOCK] Framework 12",
+    "path": "subject/framework-12",
+    "axis": "skill",
+    "body_md": "# [MOCK] Framework 12\n\n- This is synthetic framework content for development.\n  - **Point A**: placeholder.\n  - **Point B**: placeholder.\n\n> Real framework content is not included in this repo."
+  }
+]

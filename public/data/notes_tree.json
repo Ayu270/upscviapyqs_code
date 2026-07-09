@@ -1,0 +1,50 @@
+{
+ "id": "root",
+ "title": "[MOCK] Notes",
+ "type": "root",
+ "content_blocks": 0,
+ "children": [
+  {
+   "id": "node-0",
+   "title": "[MOCK] Topic 1",
+   "type": "topic",
+   "content_blocks": 2,
+   "children": []
+  },
+  {
+   "id": "node-1",
+   "title": "[MOCK] Topic 2",
+   "type": "topic",
+   "content_blocks": 2,
+   "children": []
+  },
+  {
+   "id": "node-2",
+   "title": "[MOCK] Topic 3",
+   "type": "topic",
+   "content_blocks": 2,
+   "children": []
+  },
+  {
+   "id": "node-3",
+   "title": "[MOCK] Topic 4",
+   "type": "topic",
+   "content_blocks": 2,
+   "children": []
+  },
+  {
+   "id": "node-4",
+   "title": "[MOCK] Topic 5",
+   "type": "topic",
+   "content_blocks": 2,
+   "children": []
+  },
+  {
+   "id": "node-5",
+   "title": "[MOCK] Topic 6",
+   "type": "topic",
+   "content_blocks": 2,
+   "children": []
+  }
+ ]
+}

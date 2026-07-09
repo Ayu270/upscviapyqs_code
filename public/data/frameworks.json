@@ -1,0 +1,9 @@
+[
+  {
+    "id": "fw-mock-0000-0000-000000000000",
+    "title": "[MOCK] Framework 1",
+    "path": "subject/framework-1",
+    "axis": "subject",
+    "body_md": "# [MOCK] Framework 1\n\n- This is synthetic framework content for development.\n  - **Point A**: placeholder.\n  - **Point B**: placeholder.\n\n> Real framework content is not included in this repo."
+  }
+]

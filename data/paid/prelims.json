@@ -1,0 +1,1862 @@
+[
+  {
+    "id": "prelims-mock-0000-0000-000000000000",
+    "year": 2013,
+    "q_number": 1,
+    "subject": "Polity",
+    "tags": [
+      "Polity"
+    ],
+    "correct_answer": "a",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 1 (Polity):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(a)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0001-0000-000000000000",
+    "year": 2014,
+    "q_number": 2,
+    "subject": "Economy",
+    "tags": [
+      "Economy"
+    ],
+    "correct_answer": "b",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 2 (Economy):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(b)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0002-0000-000000000000",
+    "year": 2015,
+    "q_number": 3,
+    "subject": "Geography",
+    "tags": [
+      "Geography"
+    ],
+    "correct_answer": "c",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 3 (Geography):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(c)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0003-0000-000000000000",
+    "year": 2016,
+    "q_number": 4,
+    "subject": "Environment",
+    "tags": [
+      "Environment"
+    ],
+    "correct_answer": "d",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 4 (Environment):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(d)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0004-0000-000000000000",
+    "year": 2017,
+    "q_number": 5,
+    "subject": "Modern History",
+    "tags": [
+      "Modern History"
+    ],
+    "correct_answer": "a",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 5 (Modern History):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(a)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0005-0000-000000000000",
+    "year": 2018,
+    "q_number": 6,
+    "subject": "Ancient History",
+    "tags": [
+      "Ancient History"
+    ],
+    "correct_answer": "b",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 6 (Ancient History):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(b)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0006-0000-000000000000",
+    "year": 2019,
+    "q_number": 7,
+    "subject": "Science & Technology",
+    "tags": [
+      "Science & Technology"
+    ],
+    "correct_answer": "c",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 7 (Science & Technology):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(c)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0007-0000-000000000000",
+    "year": 2020,
+    "q_number": 8,
+    "subject": "International Relations",
+    "tags": [
+      "International Relations"
+    ],
+    "correct_answer": "d",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 8 (International Relations):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(d)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0008-0000-000000000000",
+    "year": 2021,
+    "q_number": 9,
+    "subject": "Government Schemes",
+    "tags": [
+      "Government Schemes"
+    ],
+    "correct_answer": "a",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 9 (Government Schemes):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(a)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0009-0000-000000000000",
+    "year": 2022,
+    "q_number": 10,
+    "subject": "Security",
+    "tags": [
+      "Security"
+    ],
+    "correct_answer": "b",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 10 (Security):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(b)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0010-0000-000000000000",
+    "year": 2023,
+    "q_number": 11,
+    "subject": "Culture",
+    "tags": [
+      "Culture"
+    ],
+    "correct_answer": "c",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 11 (Culture):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(c)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0011-0000-000000000000",
+    "year": 2024,
+    "q_number": 12,
+    "subject": "Miscellaneous",
+    "tags": [
+      "Miscellaneous"
+    ],
+    "correct_answer": "d",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 12 (Miscellaneous):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(d)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0014-0000-000000000000",
+    "year": 2013,
+    "q_number": 15,
+    "subject": "Geography",
+    "tags": [
+      "Geography"
+    ],
+    "correct_answer": "c",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 15 (Geography):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(c)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0015-0000-000000000000",
+    "year": 2014,
+    "q_number": 16,
+    "subject": "Environment",
+    "tags": [
+      "Environment"
+    ],
+    "correct_answer": "d",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 16 (Environment):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(d)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0016-0000-000000000000",
+    "year": 2015,
+    "q_number": 17,
+    "subject": "Modern History",
+    "tags": [
+      "Modern History"
+    ],
+    "correct_answer": "a",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 17 (Modern History):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(a)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0017-0000-000000000000",
+    "year": 2016,
+    "q_number": 18,
+    "subject": "Ancient History",
+    "tags": [
+      "Ancient History"
+    ],
+    "correct_answer": "b",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 18 (Ancient History):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(b)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0018-0000-000000000000",
+    "year": 2017,
+    "q_number": 19,
+    "subject": "Science & Technology",
+    "tags": [
+      "Science & Technology"
+    ],
+    "correct_answer": "c",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 19 (Science & Technology):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(c)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0019-0000-000000000000",
+    "year": 2018,
+    "q_number": 20,
+    "subject": "International Relations",
+    "tags": [
+      "International Relations"
+    ],
+    "correct_answer": "d",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 20 (International Relations):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(d)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0020-0000-000000000000",
+    "year": 2019,
+    "q_number": 21,
+    "subject": "Government Schemes",
+    "tags": [
+      "Government Schemes"
+    ],
+    "correct_answer": "a",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 21 (Government Schemes):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(a)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0021-0000-000000000000",
+    "year": 2020,
+    "q_number": 22,
+    "subject": "Security",
+    "tags": [
+      "Security"
+    ],
+    "correct_answer": "b",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 22 (Security):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(b)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0022-0000-000000000000",
+    "year": 2021,
+    "q_number": 23,
+    "subject": "Culture",
+    "tags": [
+      "Culture"
+    ],
+    "correct_answer": "c",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 23 (Culture):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(c)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0023-0000-000000000000",
+    "year": 2022,
+    "q_number": 24,
+    "subject": "Miscellaneous",
+    "tags": [
+      "Miscellaneous"
+    ],
+    "correct_answer": "d",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 24 (Miscellaneous):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(d)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0024-0000-000000000000",
+    "year": 2023,
+    "q_number": 25,
+    "subject": "Polity",
+    "tags": [
+      "Polity"
+    ],
+    "correct_answer": "a",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 25 (Polity):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(a)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0025-0000-000000000000",
+    "year": 2024,
+    "q_number": 26,
+    "subject": "Economy",
+    "tags": [
+      "Economy"
+    ],
+    "correct_answer": "b",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 26 (Economy):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(b)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0028-0000-000000000000",
+    "year": 2013,
+    "q_number": 29,
+    "subject": "Modern History",
+    "tags": [
+      "Modern History"
+    ],
+    "correct_answer": "a",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 29 (Modern History):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(a)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0029-0000-000000000000",
+    "year": 2014,
+    "q_number": 30,
+    "subject": "Ancient History",
+    "tags": [
+      "Ancient History"
+    ],
+    "correct_answer": "b",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 30 (Ancient History):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(b)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0030-0000-000000000000",
+    "year": 2015,
+    "q_number": 31,
+    "subject": "Science & Technology",
+    "tags": [
+      "Science & Technology"
+    ],
+    "correct_answer": "c",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 31 (Science & Technology):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(c)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0031-0000-000000000000",
+    "year": 2016,
+    "q_number": 32,
+    "subject": "International Relations",
+    "tags": [
+      "International Relations"
+    ],
+    "correct_answer": "d",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 32 (International Relations):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(d)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0032-0000-000000000000",
+    "year": 2017,
+    "q_number": 33,
+    "subject": "Government Schemes",
+    "tags": [
+      "Government Schemes"
+    ],
+    "correct_answer": "a",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 33 (Government Schemes):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(a)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0033-0000-000000000000",
+    "year": 2018,
+    "q_number": 34,
+    "subject": "Security",
+    "tags": [
+      "Security"
+    ],
+    "correct_answer": "b",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 34 (Security):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(b)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0034-0000-000000000000",
+    "year": 2019,
+    "q_number": 35,
+    "subject": "Culture",
+    "tags": [
+      "Culture"
+    ],
+    "correct_answer": "c",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 35 (Culture):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(c)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0035-0000-000000000000",
+    "year": 2020,
+    "q_number": 36,
+    "subject": "Miscellaneous",
+    "tags": [
+      "Miscellaneous"
+    ],
+    "correct_answer": "d",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 36 (Miscellaneous):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(d)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0036-0000-000000000000",
+    "year": 2021,
+    "q_number": 37,
+    "subject": "Polity",
+    "tags": [
+      "Polity"
+    ],
+    "correct_answer": "a",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 37 (Polity):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(a)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0037-0000-000000000000",
+    "year": 2022,
+    "q_number": 38,
+    "subject": "Economy",
+    "tags": [
+      "Economy"
+    ],
+    "correct_answer": "b",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 38 (Economy):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(b)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0038-0000-000000000000",
+    "year": 2023,
+    "q_number": 39,
+    "subject": "Geography",
+    "tags": [
+      "Geography"
+    ],
+    "correct_answer": "c",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 39 (Geography):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(c)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0039-0000-000000000000",
+    "year": 2024,
+    "q_number": 40,
+    "subject": "Environment",
+    "tags": [
+      "Environment"
+    ],
+    "correct_answer": "d",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 40 (Environment):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(d)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0042-0000-000000000000",
+    "year": 2013,
+    "q_number": 43,
+    "subject": "Science & Technology",
+    "tags": [
+      "Science & Technology"
+    ],
+    "correct_answer": "c",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 43 (Science & Technology):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(c)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0043-0000-000000000000",
+    "year": 2014,
+    "q_number": 44,
+    "subject": "International Relations",
+    "tags": [
+      "International Relations"
+    ],
+    "correct_answer": "d",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 44 (International Relations):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(d)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0044-0000-000000000000",
+    "year": 2015,
+    "q_number": 45,
+    "subject": "Government Schemes",
+    "tags": [
+      "Government Schemes"
+    ],
+    "correct_answer": "a",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 45 (Government Schemes):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(a)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0045-0000-000000000000",
+    "year": 2016,
+    "q_number": 46,
+    "subject": "Security",
+    "tags": [
+      "Security"
+    ],
+    "correct_answer": "b",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 46 (Security):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(b)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0046-0000-000000000000",
+    "year": 2017,
+    "q_number": 47,
+    "subject": "Culture",
+    "tags": [
+      "Culture"
+    ],
+    "correct_answer": "c",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 47 (Culture):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(c)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0047-0000-000000000000",
+    "year": 2018,
+    "q_number": 48,
+    "subject": "Miscellaneous",
+    "tags": [
+      "Miscellaneous"
+    ],
+    "correct_answer": "d",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 48 (Miscellaneous):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(d)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0048-0000-000000000000",
+    "year": 2019,
+    "q_number": 49,
+    "subject": "Polity",
+    "tags": [
+      "Polity"
+    ],
+    "correct_answer": "a",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 49 (Polity):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(a)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0049-0000-000000000000",
+    "year": 2020,
+    "q_number": 50,
+    "subject": "Economy",
+    "tags": [
+      "Economy"
+    ],
+    "correct_answer": "b",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 50 (Economy):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(b)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0050-0000-000000000000",
+    "year": 2021,
+    "q_number": 51,
+    "subject": "Geography",
+    "tags": [
+      "Geography"
+    ],
+    "correct_answer": "c",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 51 (Geography):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(c)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0051-0000-000000000000",
+    "year": 2022,
+    "q_number": 52,
+    "subject": "Environment",
+    "tags": [
+      "Environment"
+    ],
+    "correct_answer": "d",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 52 (Environment):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(d)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0052-0000-000000000000",
+    "year": 2023,
+    "q_number": 53,
+    "subject": "Modern History",
+    "tags": [
+      "Modern History"
+    ],
+    "correct_answer": "a",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 53 (Modern History):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(a)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0053-0000-000000000000",
+    "year": 2024,
+    "q_number": 54,
+    "subject": "Ancient History",
+    "tags": [
+      "Ancient History"
+    ],
+    "correct_answer": "b",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 54 (Ancient History):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(b)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0056-0000-000000000000",
+    "year": 2013,
+    "q_number": 57,
+    "subject": "Government Schemes",
+    "tags": [
+      "Government Schemes"
+    ],
+    "correct_answer": "a",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 57 (Government Schemes):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(a)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0057-0000-000000000000",
+    "year": 2014,
+    "q_number": 58,
+    "subject": "Security",
+    "tags": [
+      "Security"
+    ],
+    "correct_answer": "b",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 58 (Security):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(b)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0058-0000-000000000000",
+    "year": 2015,
+    "q_number": 59,
+    "subject": "Culture",
+    "tags": [
+      "Culture"
+    ],
+    "correct_answer": "c",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 59 (Culture):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(c)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0059-0000-000000000000",
+    "year": 2016,
+    "q_number": 60,
+    "subject": "Miscellaneous",
+    "tags": [
+      "Miscellaneous"
+    ],
+    "correct_answer": "d",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 60 (Miscellaneous):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(d)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0060-0000-000000000000",
+    "year": 2017,
+    "q_number": 61,
+    "subject": "Polity",
+    "tags": [
+      "Polity"
+    ],
+    "correct_answer": "a",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 61 (Polity):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(a)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0061-0000-000000000000",
+    "year": 2018,
+    "q_number": 62,
+    "subject": "Economy",
+    "tags": [
+      "Economy"
+    ],
+    "correct_answer": "b",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 62 (Economy):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(b)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0062-0000-000000000000",
+    "year": 2019,
+    "q_number": 63,
+    "subject": "Geography",
+    "tags": [
+      "Geography"
+    ],
+    "correct_answer": "c",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 63 (Geography):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(c)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0063-0000-000000000000",
+    "year": 2020,
+    "q_number": 64,
+    "subject": "Environment",
+    "tags": [
+      "Environment"
+    ],
+    "correct_answer": "d",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 64 (Environment):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(d)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0064-0000-000000000000",
+    "year": 2021,
+    "q_number": 65,
+    "subject": "Modern History",
+    "tags": [
+      "Modern History"
+    ],
+    "correct_answer": "a",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 65 (Modern History):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(a)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0065-0000-000000000000",
+    "year": 2022,
+    "q_number": 66,
+    "subject": "Ancient History",
+    "tags": [
+      "Ancient History"
+    ],
+    "correct_answer": "b",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 66 (Ancient History):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(b)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0066-0000-000000000000",
+    "year": 2023,
+    "q_number": 67,
+    "subject": "Science & Technology",
+    "tags": [
+      "Science & Technology"
+    ],
+    "correct_answer": "c",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 67 (Science & Technology):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(c)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0067-0000-000000000000",
+    "year": 2024,
+    "q_number": 68,
+    "subject": "International Relations",
+    "tags": [
+      "International Relations"
+    ],
+    "correct_answer": "d",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 68 (International Relations):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(d)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0070-0000-000000000000",
+    "year": 2013,
+    "q_number": 71,
+    "subject": "Culture",
+    "tags": [
+      "Culture"
+    ],
+    "correct_answer": "c",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 71 (Culture):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(c)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  },
+  {
+    "id": "prelims-mock-0071-0000-000000000000",
+    "year": 2014,
+    "q_number": 72,
+    "subject": "Miscellaneous",
+    "tags": [
+      "Miscellaneous"
+    ],
+    "correct_answer": "d",
+    "stem_html": "<p>[MOCK] Consider the following statements about Sample Topic 72 (Miscellaneous):<br>1. This is a placeholder statement one.<br>2. This is a placeholder statement two.</p><p>Which of the statements given above is/are correct?</p>",
+    "options": [
+      {
+        "letter": "a",
+        "html": "1 only"
+      },
+      {
+        "letter": "b",
+        "html": "2 only"
+      },
+      {
+        "letter": "c",
+        "html": "Both 1 and 2"
+      },
+      {
+        "letter": "d",
+        "html": "Neither 1 nor 2"
+      }
+    ],
+    "analysis_html": "<h4 class='ah'><strong>Correct Answer</strong></h4><p><strong>(d)</strong></p><hr><h4 class='ah'><strong>Explanation</strong></h4><p>[MOCK] This is synthetic explanation text for development only. Real content is not included in this repository.</p>"
+  }
+]

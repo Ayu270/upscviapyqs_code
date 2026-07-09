@@ -1,0 +1,227 @@
+[
+ {
+  "id": "optional-mock-0000-0000-000000000000",
+  "year": 2013,
+  "q_number": 1,
+  "question_md": "[MOCK] Optional sample question 1.",
+  "paper": "Paper 1",
+  "optional_subject": "Public Administration",
+  "topics": [
+   "Placeholder"
+  ],
+  "word_limit": 350,
+  "body_md": "- [MOCK] Optional sample question 1 (Public Administration).\n  - Placeholder answer outline.",
+  "has_answer": true,
+  "source_url": "https://example.com/mock"
+ },
+ {
+  "id": "optional-mock-0001-0000-000000000000",
+  "year": 2014,
+  "q_number": 2,
+  "question_md": "[MOCK] Optional sample question 2.",
+  "paper": "Paper 2",
+  "optional_subject": "Sociology",
+  "topics": [
+   "Placeholder"
+  ],
+  "word_limit": 350,
+  "body_md": "- [MOCK] Optional sample question 2 (Sociology).\n  - Placeholder answer outline.",
+  "has_answer": true,
+  "source_url": "https://example.com/mock"
+ },
+ {
+  "id": "optional-mock-0002-0000-000000000000",
+  "year": 2015,
+  "q_number": 3,
+  "question_md": "[MOCK] Optional sample question 3.",
+  "paper": "Paper 1",
+  "optional_subject": "Geography",
+  "topics": [
+   "Placeholder"
+  ],
+  "word_limit": 350,
+  "body_md": "- [MOCK] Optional sample question 3 (Geography).\n  - Placeholder answer outline.",
+  "has_answer": true,
+  "source_url": "https://example.com/mock"
+ },
+ {
+  "id": "optional-mock-0003-0000-000000000000",
+  "year": 2016,
+  "q_number": 4,
+  "question_md": "[MOCK] Optional sample question 4.",
+  "paper": "Paper 2",
+  "optional_subject": "History",
+  "topics": [
+   "Placeholder"
+  ],
+  "word_limit": 350,
+  "body_md": "- [MOCK] Optional sample question 4 (History).\n  - Placeholder answer outline.",
+  "has_answer": true,
+  "source_url": "https://example.com/mock"
+ },
+ {
+  "id": "optional-mock-0004-0000-000000000000",
+  "year": 2017,
+  "q_number": 5,
+  "question_md": "[MOCK] Optional sample question 5.",
+  "paper": "Paper 1",
+  "optional_subject": "Political Science",
+  "topics": [
+   "Placeholder"
+  ],
+  "word_limit": 350,
+  "body_md": "- [MOCK] Optional sample question 5 (Political Science).\n  - Placeholder answer outline.",
+  "has_answer": true,
+  "source_url": "https://example.com/mock"
+ },
+ {
+  "id": "optional-mock-0005-0000-000000000000",
+  "year": 2018,
+  "q_number": 6,
+  "question_md": "[MOCK] Optional sample question 6.",
+  "paper": "Paper 2",
+  "optional_subject": "Public Administration",
+  "topics": [
+   "Placeholder"
+  ],
+  "word_limit": 350,
+  "body_md": "- [MOCK] Optional sample question 6 (Public Administration).\n  - Placeholder answer outline.",
+  "has_answer": true,
+  "source_url": "https://example.com/mock"
+ },
+ {
+  "id": "optional-mock-0006-0000-000000000000",
+  "year": 2019,
+  "q_number": 7,
+  "question_md": "[MOCK] Optional sample question 7.",
+  "paper": "Paper 1",
+  "optional_subject": "Sociology",
+  "topics": [
+   "Placeholder"
+  ],
+  "word_limit": 350,
+  "body_md": "- [MOCK] Optional sample question 7 (Sociology).\n  - Placeholder answer outline.",
+  "has_answer": true,
+  "source_url": "https://example.com/mock"
+ },
+ {
+  "id": "optional-mock-0007-0000-000000000000",
+  "year": 2020,
+  "q_number": 8,
+  "question_md": "[MOCK] Optional sample question 8.",
+  "paper": "Paper 2",
+  "optional_subject": "Geography",
+  "topics": [
+   "Placeholder"
+  ],
+  "word_limit": 350,
+  "body_md": "- [MOCK] Optional sample question 8 (Geography).\n  - Placeholder answer outline.",
+  "has_answer": true,
+  "source_url": "https://example.com/mock"
+ },
+ {
+  "id": "optional-mock-0008-0000-000000000000",
+  "year": 2021,
+  "q_number": 9,
+  "question_md": "[MOCK] Optional sample question 9.",
+  "paper": "Paper 1",
+  "optional_subject": "History",
+  "topics": [
+   "Placeholder"
+  ],
+  "word_limit": 350,
+  "body_md": "- [MOCK] Optional sample question 9 (History).\n  - Placeholder answer outline.",
+  "has_answer": true,
+  "source_url": "https://example.com/mock"
+ },
+ {
+  "id": "optional-mock-0009-0000-000000000000",
+  "year": 2022,
+  "q_number": 10,
+  "question_md": "[MOCK] Optional sample question 10.",
+  "paper": "Paper 2",
+  "optional_subject": "Political Science",
+  "topics": [
+   "Placeholder"
+  ],
+  "word_limit": 350,
+  "body_md": "- [MOCK] Optional sample question 10 (Political Science).\n  - Placeholder answer outline.",
+  "has_answer": true,
+  "source_url": "https://example.com/mock"
+ },
+ {
+  "id": "optional-mock-0010-0000-000000000000",
+  "year": 2023,
+  "q_number": 11,
+  "question_md": "[MOCK] Optional sample question 11.",
+  "paper": "Paper 1",
+  "optional_subject": "Public Administration",
+  "topics": [
+   "Placeholder"
+  ],
+  "word_limit": 350,
+  "body_md": "- [MOCK] Optional sample question 11 (Public Administration).\n  - Placeholder answer outline.",
+  "has_answer": true,
+  "source_url": "https://example.com/mock"
+ },
+ {
+  "id": "optional-mock-0011-0000-000000000000",
+  "year": 2024,
+  "q_number": 12,
+  "question_md": "[MOCK] Optional sample question 12.",
+  "paper": "Paper 2",
+  "optional_subject": "Sociology",
+  "topics": [
+   "Placeholder"
+  ],
+  "word_limit": 350,
+  "body_md": "- [MOCK] Optional sample question 12 (Sociology).\n  - Placeholder answer outline.",
+  "has_answer": true,
+  "source_url": "https://example.com/mock"
+ },
+ {
+  "id": "optional-mock-0012-0000-000000000000",
+  "year": 2025,
+  "q_number": 13,
+  "question_md": "[MOCK] Optional sample question 13.",
+  "paper": "Paper 1",
+  "optional_subject": "Geography",
+  "topics": [
+   "Placeholder"
+  ],
+  "word_limit": 350,
+  "body_md": "- [MOCK] Optional sample question 13 (Geography).\n  - Placeholder answer outline.",
+  "has_answer": true,
+  "source_url": "https://example.com/mock"
+ },
+ {
+  "id": "optional-mock-0013-0000-000000000000",
+  "year": 2026,
+  "q_number": 14,
+  "question_md": "[MOCK] Optional sample question 14.",
+  "paper": "Paper 2",
+  "optional_subject": "History",
+  "topics": [
+   "Placeholder"
+  ],
+  "word_limit": 350,
+  "body_md": "- [MOCK] Optional sample question 14 (History).\n  - Placeholder answer outline.",
+  "has_answer": true,
+  "source_url": "https://example.com/mock"
+ },
+ {
+  "id": "optional-mock-0014-0000-000000000000",
+  "year": 2013,
+  "q_number": 15,
+  "question_md": "[MOCK] Optional sample question 15.",
+  "paper": "Paper 1",
+  "optional_subject": "Political Science",
+  "topics": [
+   "Placeholder"
+  ],
+  "word_limit": 350,
+  "body_md": "- [MOCK] Optional sample question 15 (Political Science).\n  - Placeholder answer outline.",
+  "has_answer": true,
+  "source_url": "https://example.com/mock"
+ }
+]

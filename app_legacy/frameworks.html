@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UPSC via PYQs — Framework Library</title>
+<link rel="stylesheet" href="vendor/katex/katex.min.css">
+<link rel="stylesheet" href="msel.css">
+<script defer src="vendor/katex/katex.min.js"></script>
+<script defer src="vendor/katex/contrib/auto-render.min.js"></script>
+<script src="store.js"></script>
+<script src="msel.js"></script>
+<style>
+:root{
+  --navy:#16223E;--navy2:#1E3358;--gold:#D4A843;--gold-d:#B8922A;
+  --cream:#FAF7F0;--bg:#F0E8D6;--card:#FFFFFF;--text:#1E1E2E;--muted:#7A7A8A;
+  --border:#E5DECF;--green:#1A8040;--green-bg:#EAF7EE;--blue:#2A5C8A;--radius:10px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden}
+.header{background:var(--navy);color:#fff;padding:16px 24px;display:flex;align-items:center;justify-content:space-between;border-bottom:3px solid var(--gold);gap:16px;flex-wrap:wrap}
+.header h1{font-size:20px;font-weight:800}.header h1 span{color:var(--gold)}
+.header .tag{font-size:11px;color:rgba(255,255,255,.6)}
+.nav{display:flex;gap:6px;flex-wrap:wrap}
+.nav a{font-size:12px;font-weight:700;color:rgba(255,255,255,.7);text-decoration:none;padding:6px 12px;border-radius:20px;border:1.5px solid transparent}
+.nav a:hover{color:#fff;border-color:rgba(255,255,255,.2)}
+.nav a.active{color:var(--navy);background:var(--gold);border-color:var(--gold)}
+.filters{position:sticky;top:0;z-index:10;background:var(--card);border-bottom:1px solid var(--border);padding:12px 24px;display:flex;gap:10px;flex-wrap:wrap;align-items:center;box-shadow:0 2px 10px rgba(0,0,0,.04)}
+.filters select,.filters input{border:1.5px solid var(--border);border-radius:8px;padding:8px 12px;font-size:13px;background:var(--cream);color:var(--text)}
+.filters input{flex:1;min-width:180px}
+.filters select:focus,.filters input:focus{outline:none;border-color:var(--gold)}
+.axis-toggle{display:flex;border:1.5px solid var(--border);border-radius:8px;overflow:hidden}
+.ax{font-size:12.5px;font-weight:700;padding:8px 14px;background:var(--cream);color:var(--muted);cursor:pointer;border:none}
+.ax.active{background:var(--navy);color:#fff}
+.count{font-size:13px;color:var(--muted);margin-left:auto}
+.wrap{max-width:900px;margin:0 auto;padding:20px 24px}
+.card{background:var(--card);border:1.5px solid var(--border);border-radius:var(--radius);margin-bottom:12px;overflow:hidden}
+.card.open{border-color:var(--gold);box-shadow:0 4px 20px rgba(212,168,67,.12)}
+.chead{padding:14px 16px;display:flex;gap:12px;cursor:pointer;align-items:flex-start}
+.cact{display:flex;gap:6px;align-items:center;flex-shrink:0}
+.iconbtn{border:1.5px solid var(--border);background:#fff;border-radius:8px;width:30px;height:30px;cursor:pointer;font-size:14px;line-height:1;color:var(--muted);display:flex;align-items:center;justify-content:center;transition:.12s}
+.iconbtn:hover{border-color:var(--gold);color:var(--gold-d)}
+.iconbtn.on{background:#F7F0DC;border-color:var(--gold);color:var(--gold-d)}
+.badge{min-width:52px;background:var(--navy);border-radius:8px;padding:8px 6px;text-align:center;color:#fff;height:fit-content;font-weight:800;font-size:13px;flex-shrink:0}
+.badge .gold{color:var(--gold)}
+.stem{font-size:15.5px;line-height:1.4;font-weight:700}
+.chips{margin-top:8px;display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.chip{display:inline-block;font-size:10px;font-weight:700;border-radius:20px;padding:3px 10px;text-transform:uppercase;letter-spacing:.4px}
+.chip.paper{color:var(--navy);background:var(--gold)}
+.chip.opt{color:#fff;background:var(--blue)}
+.chip.topic{color:var(--gold-d);background:#F7F0DC}
+.chip.meta{color:var(--muted);background:var(--cream);border:1px solid var(--border);text-transform:none;letter-spacing:0}
+.caret{margin-left:auto;color:var(--muted);font-size:13px;align-self:center;transition:.15s}
+.card.open .caret{transform:rotate(90deg);color:var(--gold-d)}
+.body{display:none;padding:0 16px 18px 16px}
+.card.open .body{display:block}
+/* section accordion */
+.secbar{display:flex;gap:14px;align-items:center;margin:14px 0 8px}
+.seccount{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--muted)}
+.lnk{background:none;border:none;color:var(--gold-d);font-size:12px;font-weight:700;cursor:pointer;padding:0}
+.lnk:hover{text-decoration:underline}
+.intro{font-size:13.5px;color:var(--muted);margin:4px 0 12px}
+.sec{border:1.5px solid var(--border);border-radius:8px;margin-bottom:8px;overflow:hidden;background:#fff}
+.sec-h{display:flex;gap:9px;align-items:center;padding:11px 14px;cursor:pointer;background:var(--cream)}
+.sec-h:hover{background:#F4EFE0}
+.sec.open>.sec-h{background:#F4F0E0;border-bottom:1.5px solid var(--border)}
+.sec-ar{color:var(--muted);font-size:12px;transition:.15s;flex-shrink:0}
+.sec.open .sec-ar{transform:rotate(90deg);color:var(--gold-d)}
+.sec-t{font-weight:700;font-size:14px;color:var(--navy)}
+.sec-t strong{color:var(--navy)}
+.sec-c{display:none;padding:2px 16px 14px}
+.sec.open>.sec-c{display:block}
+.subwrap{margin-top:8px}
+.sub{border:1px solid var(--border);border-radius:6px;margin-bottom:6px;overflow:hidden;background:#fff}
+.sub-h{display:flex;gap:8px;align-items:center;padding:8px 12px;cursor:pointer;background:#FBF8F0}
+.sub-h:hover{background:#F4EFE0}
+.sub.open>.sub-h{background:#F4F0E0}
+.sub-ar{color:var(--muted);font-size:11px;transition:.15s;flex-shrink:0}
+.sub.open .sub-ar{transform:rotate(90deg);color:var(--gold-d)}
+.sub-t{font-weight:600;font-size:13px;color:var(--navy2)}
+.sub-t strong{color:var(--navy2)}
+.sub-c{display:none;padding:2px 13px 11px}
+.sub.open>.sub-c{display:block}
+/* third tier (lighter, slightly inset so 3 levels stay legible) */
+.sub .subwrap{margin-top:6px}
+.sub.ss{border-color:#ECE4D2}
+.sub.ss>.sub-h{background:#FCFAF4}
+.sub.ss>.sub-h:hover{background:#F6F1E5}
+.sub.ss.open>.sub-h{background:#F4F0E0}
+.sub.ss .sub-t{font-size:12.5px;color:var(--navy)}
+/* case-study scenario block (shown above the question toggles) */
+.csscn{font-size:13.5px;line-height:1.6;background:#FBF8F0;border:1px solid var(--border);border-radius:6px;padding:10px 13px;margin:2px 0 10px}
+.csscn p{margin:0}
+.csscn strong{color:var(--navy)}
+/* rendered framework body */
+.ans{font-size:14px;line-height:1.65}
+.ans h2,.ans h3,.ans h4{color:var(--navy);font-weight:800;margin:18px 0 6px;line-height:1.35;scroll-margin-top:72px}
+.ans h2{font-size:17px;border-bottom:1.5px solid var(--border);padding-bottom:5px}
+.ans h3{font-size:15px}.ans h4{font-size:14px}
+.ans p{margin:9px 0}
+.ans .mdsub{font-weight:800;color:var(--navy2);margin:16px 0 4px;font-size:14px}
+.ans ul,.ans ol{margin:8px 0 8px 22px}.ans li{margin:4px 0}
+.ans li[id]{scroll-margin-top:72px}
+.ans li>ul,.ans li>ol{margin:4px 0 4px 18px}
+.ans strong{color:var(--text)}
+.ans hr{border:none;border-top:1px dashed var(--border);margin:14px 0}
+.ans blockquote{border-left:3px solid var(--gold);background:#FBF8F0;margin:10px 0;padding:6px 14px}
+.ans code{background:#F0ECE0;padding:1px 5px;border-radius:4px;font-size:12.5px}
+.ans table{border-collapse:collapse;width:100%;margin:12px 0;font-size:13px;display:block;overflow-x:auto}
+.ans th,.ans td{border:1px solid var(--border);padding:7px 10px;text-align:left;vertical-align:top}
+.ans th{background:#F7F0DC;font-weight:700}
+.katex-display{margin:10px 0!important;overflow-x:auto;overflow-y:hidden;max-width:100%;padding:4px 2px}
+.loading{text-align:center;padding:60px;color:var(--muted)}
+mark{background:#FCE9A6;color:inherit;padding:0 1px;border-radius:2px}
+@media(max-width:560px){.header{padding:12px 14px}.wrap{padding:14px}.filters{padding:10px 14px;gap:8px}.filters input,.filters select{font-size:12.5px;padding:7px 10px}.chead{padding:12px;gap:10px}}
+.grouphd{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);margin:18px 4px 8px;padding-bottom:4px;border-bottom:1.5px solid var(--border)}
+.grouphd:first-child{margin-top:0}
+</style>
+<link rel="stylesheet" href="ui.css">
+</head>
+<body>
+<div class="header">
+  <div><a href="index.html" class="brand"><h1>UPSC via <span>PYQs</span></h1></a><div class="tag">Framework Library · subject &amp; syllabus axes</div></div>
+  <div class="nav">
+    <a href="index.html">Home</a>
+    <a href="prelims.html">Prelims</a>
+    <a href="mains.html">Mains</a>
+    <a href="optional.html">Optional</a>
+    <a href="frameworks.html" class="active">Frameworks</a>
+    <a href="practice.html">Practice</a>
+    <a href="dashboard.html">Dashboard</a>
+  </div>
+  <div class="tag" id="hcount"></div>
+</div>
+<div class="filters">
+  <div class="axis-toggle">
+    <button class="ax active" data-ax="subject">Subject-wise</button>
+    <button class="ax" data-ax="syllabus">Syllabus-wise</button>
+  </div>
+  <input id="q" placeholder="Search frameworks…">
+  <div id="group"></div>
+  <div id="show"></div>
+  <span class="count" id="count"></span>
+</div>
+<div class="wrap"><div id="list" class="loading">Loading frameworks…</div></div>
+
+<script>
+let DATA=[], BY_ID={}, AXIS="subject";
+const SECMD={};   // cardId → array of section markdown (lazy-rendered on expand)
+const SUBMD={};   // "cardId-sectionIndex" → array of sub-section markdown
+const SUB3MD={};  // "subKey~subIndex" → array of third-level markdown
+const SECTITLE={}; // cardId → array of section titles (to special-case "Case Studies")
+const CASEKEY={};  // subKey → 1 when that section is "Case Studies" (questions split into toggles)
+const SUBSCN={};   // subKey → array of case-study scenario openings
+const $=id=>document.getElementById(id);
+const esc=s=>(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+function hl(html){ const t=$("q").value.trim(); if(t.length<2)return html;
+  const re=new RegExp("("+t.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")+")","ig");
+  return html.split(/(<[^>]+>)/).map(s=>s.charAt(0)==="<"?s:s.replace(re,"<mark>$1</mark>")).join(""); }
+
+/* ---- inline markdown ---- */
+function inline(t){
+  t=esc(t);
+  t=t.replace(/\[([^\]]+)\]\((https?:[^)\s]+)\)/g,'<a href="$2" target="_blank" rel="noopener">$1</a>');
+  t=t.replace(/\*\*([^*]+?)\*\*/g,"<strong>$1</strong>");
+  t=t.replace(/(^|[^*])\*([^*\n]+?)\*(?!\*)/g,"$1<em>$2</em>");
+  t=t.replace(/`([^`]+?)`/g,"<code>$1</code>");
+  return t;
+}
+function renderList(items){
+  let out="",i=0;
+  while(i<items.length){
+    const base=items[i].indent, ordered=items[i].ordered;
+    out+=ordered?"<ol>":"<ul>";
+    while(i<items.length && items[i].indent===base){
+      let li="<li>"+inline(items[i].text);
+      let j=i+1; const kids=[];
+      while(j<items.length && items[j].indent>base){kids.push(items[j]);j++;}
+      if(kids.length) li+=renderList(kids);
+      out+=li+"</li>"; i=j;
+    }
+    out+=ordered?"</ol>":"</ul>";
+  }
+  return out;
+}
+function mdToHtml(md){
+  if(!md) return "";
+  const lines=md.replace(/\r\n?/g,"\n").split("\n");
+  let html="",i=0,para=[];
+  const flush=()=>{ if(para.length){html+="<p>"+inline(para.join(" "))+"</p>";para=[];} };
+  const listRe=/^(\s*)([-*+]|\d+[.)])\s+(.*)$/;
+  const tableSep=/^\s*\|?\s*:?-{1,}:?\s*(\|\s*:?-{1,}:?\s*)+\|?\s*$/;
+  while(i<lines.length){
+    const ln=lines[i], t=ln.trim();
+    if(!t){ flush(); i++; continue; }
+    if(/^(-{3,}|\*{3,}|_{3,})$/.test(t)){ flush(); html+="<hr>"; i++; continue; }
+    let h=t.match(/^(#{1,6})\s+(.*)$/);
+    if(h){ flush(); let lv=Math.min(h[1].length+1,4); html+="<h"+lv+">"+inline(h[2].replace(/\s*#+\s*$/,""))+"</h"+lv+">"; i++; continue; }
+    if(t.indexOf("|")>=0 && i+1<lines.length && tableSep.test(lines[i+1])){
+      flush();
+      const cells=r=>r.trim().replace(/^\|/,"").replace(/\|$/,"").split("|").map(c=>c.trim());
+      const head=cells(t);
+      html+="<table><thead><tr>"+head.map(c=>"<th>"+inline(c)+"</th>").join("")+"</tr></thead><tbody>";
+      i+=2;
+      while(i<lines.length && lines[i].indexOf("|")>=0 && lines[i].trim()){
+        const r=cells(lines[i]); html+="<tr>"+r.map(c=>"<td>"+inline(c)+"</td>").join("")+"</tr>"; i++;
+      }
+      html+="</tbody></table>"; continue;
+    }
+    if(/^>\s?/.test(t)){ flush(); const buf=[]; while(i<lines.length && /^\s*>\s?/.test(lines[i])){buf.push(lines[i].replace(/^\s*>\s?/,""));i++;} html+="<blockquote>"+inline(buf.join(" "))+"</blockquote>"; continue; }
+    if(listRe.test(ln)){
+      flush(); const items=[];
+      while(i<lines.length){
+        const m=lines[i].match(listRe);
+        if(!m){ break; }
+        items.push({indent:m[1].replace(/\t/g,"  ").length, ordered:/\d/.test(m[2]), text:m[3]});
+        i++;
+      }
+      html+=renderList(items); continue;
+    }
+    let b=t.match(/^\*\*(.+?)\*\*[:：]?\s*$/);
+    if(b){ flush(); html+='<div class="mdsub">'+inline(b[1])+"</div>"; i++; continue; }
+    para.push(t); flush(); i++;
+  }
+  flush();
+  return html;
+}
+function renderMath(html){
+  if(!window.katex||!html||html.indexOf("\\")<0)return html||"";
+  return html
+    .replace(/\\\[([\s\S]+?)\\\]/g,(m,e)=>{try{return katex.renderToString(e,{displayMode:true,throwOnError:false})}catch(_){return m}})
+    .replace(/\\\(([\s\S]+?)\\\)/g,(m,e)=>{try{return katex.renderToString(e,{displayMode:false,throwOnError:false})}catch(_){return m}});
+}
+/* ---- split a framework body into top-level sections (indent-0 bullets = the classification) ---- */
+function splitSections(body){
+  const lines=(body||"").replace(/\r\n?/g,"\n").split("\n");
+  const isTop=l=>/^[-*+]\s+\S/.test(l);   // a bullet at column 0 = a major topic boundary
+  const idx=[]; for(let i=0;i<lines.length;i++) if(isTop(lines[i])) idx.push(i);
+  if(!idx.length) return [{title:"", md:body}];
+  const secs=[];
+  if(idx[0]>0){ const pre=lines.slice(0,idx[0]).join("\n").trim(); if(pre) secs.push({title:"", md:pre, intro:true}); }
+  for(let k=0;k<idx.length;k++){
+    const s=idx[k], e=(k+1<idx.length)?idx[k+1]:lines.length;
+    secs.push({title:lines[s].replace(/^[-*+]\s+/,"").trim(), md:lines.slice(s+1,e).join("\n")});
+  }
+  return secs;
+}
+/* ---- split a section into sub-sections (indent-2 bullets, else ### headings) ---- */
+function splitSub(md){
+  if(!md || md.length<2000) return null;            // small enough to read as one block
+  const lines=md.replace(/\r\n?/g,"\n").split("\n");
+  const b2=[],h3=[];
+  for(let i=0;i<lines.length;i++){
+    if(/^\s{1,3}[-*+]\s+\S/.test(lines[i])) b2.push(i);        // indent-2 bullet = sub-topic
+    else if(/^#{1,6}\s+\S/.test(lines[i])) h3.push(i);          // heading = sub-section
+  }
+  const ok=(a,hi)=>a.length>=2 && a.length<=hi;
+  // Only split when the section LEADS with sub-topic bullets. If it leads with a heading, it's a single
+  // answer written to the skeleton (### 1. Introduction / 2. … / Conclusion) whose bullets are leaf points
+  // (e.g. subject-wise "Pre Historic Cultures…" → "Contextual Background: …") — render it as one block.
+  let leadsBullet=false;
+  for(let i=0;i<lines.length;i++){
+    if(/^\s{1,3}[-*+]\s+\S/.test(lines[i])){ leadsBullet=true; break; }
+    if(/^#{1,6}\s+\S/.test(lines[i])){ leadsBullet=false; break; }
+  }
+  if(!leadsBullet) return null;
+  // split ONLY on real sub-topic bullets — never on the answer skeleton.
+  const idx = ok(b2,40)?b2 : ok(b2,120)?b2 : null;
+  void h3;
+  if(!idx) return null;
+  const subs=[];
+  if(idx[0]>0){ const pre=lines.slice(0,idx[0]).join("\n").trim(); if(pre) subs.push({title:"", md:pre, intro:true}); }
+  for(let k=0;k<idx.length;k++){
+    const s=idx[k], e=(k+1<idx.length)?idx[k+1]:lines.length;
+    subs.push({title:lines[s].replace(/^\s*[-*+]\s+/,"").replace(/^#{1,6}\s+/,"").trim(), md:lines.slice(s+1,e).join("\n")});
+  }
+  return subs.filter(s=>!s.intro).length>=2 ? subs : null;
+}
+/* ---- third level: only when a sub-section LEADS with short title-bullets that contain headings
+   (e.g. GS-I "Modern Indian history" → Significant events / Personalities / Issues). Leaf/prose
+   bullets and heading-led bodies are left as one block so nothing gets mangled. ---- */
+function splitSub3(md){
+  if(!md) return null;
+  const lines=md.replace(/\r\n?/g,"\n").split("\n");
+  let first=-1, firstBullet=false, base=null;
+  for(let i=0;i<lines.length;i++){
+    const b=lines[i].match(/^(\s*)([-*+])\s+\S/), h=/^#{1,6}\s+\S/.test(lines[i]);
+    if(b){ first=i; firstBullet=true; base=b[1].replace(/\t/g,"  ").length; break; }
+    if(h){ first=i; firstBullet=false; break; }
+  }
+  if(first<0 || !firstBullet || base<2) return null;     // heading-led (leaf bullets) → keep as block
+  const idx=[];
+  for(let i=first;i<lines.length;i++){
+    const m=lines[i].match(/^(\s*)([-*+])\s+\S/);
+    if(m && m[1].replace(/\t/g,"  ").length===base) idx.push(i);
+  }
+  if(idx.length<2) return null;
+  const subs=[];
+  for(let k=0;k<idx.length;k++){
+    const s=idx[k], e=(k+1<idx.length)?idx[k+1]:lines.length;
+    const title=lines[s].replace(/^\s*[-*+]\s+/,"").replace(/\*\*/g,"").trim();
+    let hasH=false; for(let p=s+1;p<e;p++){ if(/^#{1,6}\s+\S/.test(lines[p])){ hasH=true; break; } }
+    // every block must be a genuine short title that owns headings — else this isn't a real 3rd level
+    if(!(title.length<=90 && title.split(/\s+/).length<=14 && !/\.\s|\.$/.test(title) && hasH)) return null;
+    subs.push({title, md:lines.slice(s+1,e).join("\n")});
+  }
+  return subs;
+}
+/* ---- inside a case study, the questions are "-" bullets one level under the scenario (indent 3–6);
+   answer content lives deeper (indent 8+). Split on those question bullets only — when a case study
+   has its question merged into the scenario prose (no such bullets), keep it as one block. ---- */
+function splitQuestions(md){
+  const lines=(md||"").replace(/\r\n?/g,"\n").split("\n");
+  const idx=[];
+  for(let i=0;i<lines.length;i++){
+    const m=lines[i].match(/^(\s*)[-*+]\s+\S/);
+    if(m){ const ind=m[1].replace(/\t/g,"  ").length; if(ind>=3 && ind<=6) idx.push(i); }
+  }
+  if(!idx.length) return null;          // even a single question bullet becomes its own toggle
+  const pre=lines.slice(0,idx[0]).join("\n").trim();
+  const qs=[];
+  for(let k=0;k<idx.length;k++){
+    const s=idx[k], e=(k+1<idx.length)?idx[k+1]:lines.length;
+    qs.push({ title:lines[s].replace(/^\s*[-*+]\s+/,"").replace(/\*\*/g,"").trim(), md:lines.slice(s+1,e).join("\n") });
+  }
+  return {pre, qs};
+}
+
+/* ---- paper/group label from path ---- */
+function groupOf(node){
+  const segs=node.path.split(" / ");
+  if(node.axis==="subject") return (segs[1]||"").replace("General Studies ","GS");
+  if(segs[1]==="Public Administration") return "PubAd";
+  const m=(segs[1]||"").match(/General Studies[-\s]*([IVX]+)/i);
+  return m?("GS-"+m[1].toUpperCase()):"Syllabus";
+}
+const GROUP_ORDER={subject:["GS1","GS2","GS3","GS4"],syllabus:["GS-I","GS-II","GS-III","GS-IV","PubAd"]};
+
+fetch("../data/frameworks.json").then(r=>r.json()).then(fw=>{
+  DATA=fw.filter(x=>x.title!=="subject-root" && x.path!=="subject" && x.path!=="syllabus" && (x.path||"").indexOf("Public Administration")<0).map(x=>{
+    const segs=x.path.split(" / ");
+    const parent=x.axis==="subject"?(segs.length>3?segs[2]:""):(segs[1]==="Public Administration"?"Public Administration":"");
+    const body=x.body_md||"";
+    const words=(body.match(/\S+/g)||[]).length;
+    const sections=(body.match(/(^|\n)[-*+]\s+\S/g)||[]).length;
+    return {...x, _group:groupOf(x), _parent:parent, _title:x.title, _words:words, _sections:sections,
+            _search:(x.title+" "+x.path).toLowerCase()};
+  });
+  DATA.forEach(x=>BY_ID[x.id]=x);
+  $("hcount").textContent=DATA.length+" frameworks";
+  MSel.create("group",{key:"group",label:"Group"});
+  MSel.create("show",{key:"show",label:"Show"});
+  MSel.setOptions("show",[{v:"book",l:"★ Bookmarked"},{v:"rev",l:"⚑ For revision"}]);
+  MSel.onChange(()=>apply());
+  $("q").addEventListener("input",apply);
+  document.querySelectorAll(".ax").forEach(b=>b.addEventListener("click",()=>{
+    document.querySelectorAll(".ax").forEach(z=>z.classList.remove("active"));
+    b.classList.add("active"); AXIS=b.dataset.ax; MSel.set("group",[]); rebuildGroups(); apply();
+  }));
+  // deep-link: ?axis=subject|syllabus & ?group=GS1,GS2 & ?q= & ?show=
+  const P=new URLSearchParams(location.search);
+  const ax=P.get("axis"); if(ax==="subject"||ax==="syllabus"){AXIS=ax;document.querySelectorAll(".ax").forEach(z=>z.classList.toggle("active",z.dataset.ax===ax));}
+  rebuildGroups();
+  if(P.get("group"))MSel.set("group",P.get("group").split(","));
+  if(P.get("show"))MSel.set("show",P.get("show").split(","));
+  if(P.get("q"))$("q").value=P.get("q");
+  rebuildGroups(); apply();
+}).catch(e=>{console.error("load error:",e);$("list").innerHTML='<div class="loading">Could not load frameworks. Serve from the project root:<br><br><code>cd upscviapyqs &amp;&amp; python3 serve.py</code><br>then open <code>http://localhost:8000/app/frameworks.html</code></div>';});
+
+function rebuildGroups(){
+  const present=[...new Set(DATA.filter(x=>x.axis===AXIS).map(x=>x._group))];
+  present.sort((a,b)=>{const o=GROUP_ORDER[AXIS];return (o.indexOf(a)<0?99:o.indexOf(a))-(o.indexOf(b)<0?99:o.indexOf(b));});
+  MSel.setOptions("group",present);
+}
+
+function apply(){
+  const q=$("q").value.toLowerCase().trim(), G=MSel.values("group"), S=MSel.values("show");
+  const view=DATA.filter(x=>x.axis===AXIS && (!G.length||G.includes(x._group)) && (!q||x._search.includes(q))
+    && (!S.length || S.some(s=>s==="book"?Store.isBookmarked("framework",x.id):s==="rev"?Store.isRevise("framework",x.id):false)));
+  const order=GROUP_ORDER[AXIS];
+  view.sort((a,b)=>{
+    const ga=order.indexOf(a._group),gb=order.indexOf(b._group);
+    if(ga!==gb) return (ga<0?99:ga)-(gb<0?99:gb);
+    return a.path.localeCompare(b.path);
+  });
+  $("count").textContent=view.length+" framework"+(view.length===1?"":"s");
+  // render grouped by paper
+  let html="",cur=null;
+  view.forEach(x=>{ if(x._group!==cur){cur=x._group; html+=`<div class="grouphd">${esc(cur)}</div>`;} html+=card(x); });
+  $("list").className="";
+  $("list").innerHTML=html||'<div class="loading">No matches.</div>';
+}
+
+function card(x){
+  const parent=x._parent?`<span class="chip topic">${esc(x._parent)}</span>`:"";
+  const axisChip=x.axis==="syllabus"?`<span class="chip opt">Syllabus</span>`:"";
+  const kw=x._words>=1000?(x._words/1000).toFixed(1)+"k words":x._words+" words";
+  return `<div class="card" id="c-${x.id}">
+    <div class="chead" onclick="toggle('${x.id}')">
+      <div class="badge"><span class="gold">${esc(x._group)}</span></div>
+      <div style="flex:1;min-width:0">
+        <div class="stem">${hl(esc(x._title))}</div>
+        <div class="chips">${axisChip}${parent}<span class="chip meta">${kw}</span><span class="chip meta">${x._sections} sections</span></div>
+      </div>
+      <div class="cact">
+        <button class="iconbtn ${Store.isBookmarked("framework",x.id)?'on':''}" title="Bookmark" onclick="event.stopPropagation();tBook('${x.id}',this)">★</button>
+        <button class="iconbtn ${Store.isRevise("framework",x.id)?'on':''}" title="Mark for revision" onclick="event.stopPropagation();tRev('${x.id}',this)">⚑</button>
+      </div>
+      <div class="caret">▸</div>
+    </div>
+    <div class="body"><div class="ans" id="a-${x.id}"></div></div>
+  </div>`;
+}
+
+window.tBook=(id,btn)=>{const on=Store.toggleBookmark("framework",id);btn.classList.toggle("on",on);if(MSel.values("show").length)apply();};
+window.tRev=(id,btn)=>{const on=Store.toggleRevise("framework",id);btn.classList.toggle("on",on);if(MSel.values("show").length)apply();};
+window.toggle=id=>{
+  const c=$("c-"+id); const open=c.classList.toggle("open");
+  if(open){
+    const a=$("a-"+id);
+    if(!a.dataset.done){
+      const x=BY_ID[id], cid=id;
+      const secs=splitSections(x.body_md||"");
+      SECMD[cid]=secs.map(s=>s.md);
+      SECTITLE[cid]=secs.map(s=>s.title||"");
+      const real=secs.filter(s=>!s.intro).length;
+      let html='<div class="secbar"><span class="seccount">'+real+' sections</span>'+
+        '<button class="lnk" onclick="allSec(\''+cid+'\',1)">Expand all</button>'+
+        '<button class="lnk" onclick="allSec(\''+cid+'\',0)">Collapse all</button></div>';
+      secs.forEach((s,n)=>{
+        if(s.intro){ html+='<div class="intro">'+renderMath(mdToHtml(s.md))+'</div>'; return; }
+        html+='<div class="sec" id="s-'+cid+'-'+n+'">'+
+          '<div class="sec-h" onclick="toggleSec(\''+cid+'\','+n+')"><span class="sec-ar">▸</span><span class="sec-t">'+inline(s.title)+'</span></div>'+
+          '<div class="sec-c" id="sc-'+cid+'-'+n+'"></div></div>';
+      });
+      a.innerHTML=html; a.dataset.done="1";
+    }
+  }
+};
+window.toggleSec=(cid,n)=>{
+  const sec=$("s-"+cid+"-"+n); const open=sec.classList.toggle("open");
+  if(open){
+    const cc=$("sc-"+cid+"-"+n);
+    if(!cc.dataset.done){
+      const md=SECMD[cid][n]||"";
+      let subs=splitSub(md);
+      const stitle=(SECTITLE[cid]||[])[n]||"";
+      const isCase=subs && /^\s*case stud/i.test(stitle);
+      if(isCase){
+        // each case study is a bullet whose text IS the scenario → title it "Case Study N";
+        // the scenario opening is kept aside so questions can become toggles inside (see renderCase)
+        let cn=0;
+        subs=subs.map(s=> s.intro ? s : {title:"Case Study "+(++cn), scenario:s.title, md:s.md});
+      }
+      if(subs){
+        const key=cid+"|"+n; SUBMD[key]=subs.map(s=>s.md);
+        if(isCase){ CASEKEY[key]=1; SUBSCN[key]=subs.map(s=>s.scenario||""); }
+        let h='<div class="subwrap">';
+        subs.forEach((s,m)=>{
+          if(s.intro){ h+='<div class="intro">'+renderMath(mdToHtml(s.md))+'</div>'; return; }
+          h+='<div class="sub" id="u-'+key+'-'+m+'">'+
+            '<div class="sub-h" onclick="toggleSub(\''+key+'\','+m+')"><span class="sub-ar">▸</span><span class="sub-t">'+inline(s.title)+'</span></div>'+
+            '<div class="sub-c" id="uc-'+key+'-'+m+'"></div></div>';
+        });
+        cc.innerHTML=h+'</div>';
+      } else {
+        cc.innerHTML=renderMath(mdToHtml(md));
+      }
+      cc.dataset.done="1";
+    }
+  }
+};
+function renderCase(cc,key,m,md){
+  const scn=(SUBSCN[key]||[])[m]||"";
+  const q=splitQuestions(md);          // Format A: question bullets (indent 3–6)
+  let pre = q ? q.pre : "";
+  let toggles = q ? q.qs : null;
+  if(!toggles){
+    // Format B: question is in prose (indent ≤2), the answer is indented (≥4) → one "Model answer" toggle
+    const lines=md.replace(/\r\n?/g,"\n").split("\n");
+    let ai=-1;
+    for(let i=0;i<lines.length;i++){ if(lines[i].trim() && lines[i].match(/^(\s*)/)[1].replace(/\t/g,"  ").length>=4){ ai=i; break; } }
+    if(ai>0){ pre=lines.slice(0,ai).join("\n").trim(); toggles=[{title:"Model answer", md:lines.slice(ai).join("\n")}]; }
+  }
+  let h='<div class="csscn">'+renderMath(mdToHtml("**Scenario —** "+scn+(pre?("\n\n"+pre):"")))+'</div>';
+  if(toggles){
+    const k3=key+"~"+m; SUB3MD[k3]=toggles.map(s=>s.md);
+    h+='<div class="subwrap">';
+    toggles.forEach((s,z)=>{
+      h+='<div class="sub ss" id="v-'+k3+'-'+z+'">'+
+        '<div class="sub-h" onclick="toggleSub3(\''+k3+'\','+z+')"><span class="sub-ar">▸</span><span class="sub-t">'+inline(s.title)+'</span></div>'+
+        '<div class="sub-c" id="vc-'+k3+'-'+z+'"></div></div>';
+    });
+    h+='</div>';
+  } else {
+    h+='<div class="ans">'+renderMath(mdToHtml(md))+'</div>';   // fallback (no indented answer)
+  }
+  cc.innerHTML=h;
+}
+window.toggleSub=(key,m)=>{
+  const sub=$("u-"+key+"-"+m); const open=sub.classList.toggle("open");
+  if(open){ const cc=$("uc-"+key+"-"+m);
+    if(!cc.dataset.done){
+      const md=SUBMD[key][m]||"";
+      if(CASEKEY[key]){ renderCase(cc,key,m,md); cc.dataset.done="1"; return; }
+      const t3=splitSub3(md);
+      if(t3){
+        const k3=key+"~"+m; SUB3MD[k3]=t3.map(s=>s.md);
+        let h='<div class="subwrap">';
+        t3.forEach((s,z)=>{
+          h+='<div class="sub ss" id="v-'+k3+'-'+z+'">'+
+            '<div class="sub-h" onclick="toggleSub3(\''+k3+'\','+z+')"><span class="sub-ar">▸</span><span class="sub-t">'+inline(s.title)+'</span></div>'+
+            '<div class="sub-c" id="vc-'+k3+'-'+z+'"></div></div>';
+        });
+        cc.innerHTML=h+'</div>';
+      } else {
+        cc.innerHTML=renderMath(mdToHtml(md));
+      }
+      cc.dataset.done="1";
+    }
+  }
+};
+window.toggleSub3=(k3,z)=>{
+  const sub=$("v-"+k3+"-"+z); const open=sub.classList.toggle("open");
+  if(open){ const cc=$("vc-"+k3+"-"+z); if(!cc.dataset.done){ cc.innerHTML=renderMath(mdToHtml(SUB3MD[k3][z]||"")); cc.dataset.done="1"; } }
+};
+window.allSec=(cid,expand)=>{
+  document.querySelectorAll('[id^="s-'+cid+'-"]').forEach(sec=>{
+    const n=+sec.id.split("-").pop();
+    if(expand){ if(!sec.classList.contains("open")) toggleSec(cid,n); }
+    else sec.classList.remove("open");
+  });
+};
+</script>
+</body>
+</html>

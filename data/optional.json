@@ -1,0 +1,62 @@
+[
+  {
+    "id": "optional-mock-0012-0000-000000000000",
+    "year": 2025,
+    "q_number": 13,
+    "question_md": "[MOCK] Optional sample question 13.",
+    "paper": "Paper 1",
+    "optional_subject": "Geography",
+    "topics": [
+      "Placeholder"
+    ],
+    "word_limit": 350,
+    "body_md": "- [MOCK] Optional sample question 13 (Geography).\n  - Placeholder answer outline.",
+    "has_answer": true,
+    "source_url": "https://example.com/mock"
+  },
+  {
+    "id": "optional-mock-0013-0000-000000000000",
+    "year": 2026,
+    "q_number": 14,
+    "question_md": "[MOCK] Optional sample question 14.",
+    "paper": "Paper 2",
+    "optional_subject": "History",
+    "topics": [
+      "Placeholder"
+    ],
+    "word_limit": 350,
+    "body_md": "- [MOCK] Optional sample question 14 (History).\n  - Placeholder answer outline.",
+    "has_answer": true,
+    "source_url": "https://example.com/mock"
+  },
+  {
+    "id": "optional-mock-0026-0000-000000000000",
+    "year": 2025,
+    "q_number": 2,
+    "question_md": "[MOCK] Optional sample question 27.",
+    "paper": "Paper 1",
+    "optional_subject": "Sociology",
+    "topics": [
+      "Placeholder"
+    ],
+    "word_limit": 350,
+    "body_md": "- [MOCK] Optional sample question 27 (Sociology).\n  - Placeholder answer outline.",
+    "has_answer": true,
+    "source_url": "https://example.com/mock"
+  },
+  {
+    "id": "optional-mock-0027-0000-000000000000",
+    "year": 2026,
+    "q_number": 3,
+    "question_md": "[MOCK] Optional sample question 28.",
+    "paper": "Paper 2",
+    "optional_subject": "Geography",
+    "topics": [
+      "Placeholder"
+    ],
+    "word_limit": 350,
+    "body_md": "- [MOCK] Optional sample question 28 (Geography).\n  - Placeholder answer outline.",
+    "has_answer": true,
+    "source_url": "https://example.com/mock"
+  }
+]
