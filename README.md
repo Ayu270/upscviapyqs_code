@@ -1,37 +1,76 @@
-# UPSC via PYQs — static app (team handoff)
+# UPSC via PYQs — Next.js Handoff & Architecture Guide
 
-> ⚠️ **DEVELOPMENT REPO — MOCK DATA.** Every file under `data/` is **synthetic placeholder content** (look for the `[MOCK]` markers), generated only so the app renders and is safe to share. The **real question/content dataset is NOT in this repository** and is never committed here. Build and test against this mock data; the production data is integrated separately by the maintainers. See `data/README.md`.
+Welcome to the modernized **UPSC via PYQs** application. This project has been fully migrated from a collection of static HTML/JS scripts into a production-ready, performant, and premium **Next.js + TypeScript + Material-UI (MUI)** web application, fully integrated with **Supabase** for database content and authentication.
 
-A dependency-free static study web app for UPSC aspirants: **Prelims / Mains / Optional** explorers, a **Frameworks** library, **Practice**, and a **Dashboard**. No build step, no framework — just static HTML + inline JS + a few shared modules.
+---
 
-## Run locally
+##  Quickstart: Local Development
+
+### 1. Prerequisites
+- **Node.js** (v18.x or above)
+- **NPM** (v9.x or above)
+
+### 2. Installation
+Clone the repository and install the dependencies:
 ```bash
-python3 serve.py        # → http://localhost:8000/app/   (no-cache headers, port 8000)
+npm install
 ```
-Open `http://localhost:8000/app/index.html`.
 
-## Structure
-- **`app/`** — all pages, each a self-contained HTML file with inline JS + its own markdown renderer + vendored KaTeX. `index.html` is the home page.
-  - Shared modules: `store.js` (localStorage progress under `upsc:v1:*`), `md.js` (markdown helpers), `msel.css`/`msel.js` (multi-select faceted filters), `ui.css` (shared responsive chrome + clickable-logo + anti-copy).
-- **`data/*.json`** — the content, normalized from Notion: `prelims_structured.json`, `mains.json`, `optional.json`, `frameworks.json`.
-- **`serve.py`** — local static server.
-- **`supabase/schema.sql`** + **`load_paid.py`** — **PARKED** backend scaffolding for the planned paywall (not wired into the app yet). See below.
+### 3. Run Development Server
+Start the Next.js local server on `http://localhost:3000`:
+```bash
+npm run dev
+```
 
-## Verification convention (no Node in this project)
-JS is sanity-checked headlessly with **JavaScriptCore** (`/System/Library/Frameworks/JavaScriptCore.framework/Versions/A/Helpers/jsc`): slice a page's `<script>` body, `new Function(...)` for syntax, and `eval` with DOM stubs to run functions over `data/*.json`.
+### 4. Build for Production
+Verify typescript compilation and build the optimized production pages:
+```bash
+npm run build
+```
 
-## Planned monetization (to build — this is the task)
-Single **All-Access annual pass: ₹999 + 18% GST** (founder price ₹599), **7-day refund**, **UPI via Razorpay**. Free tier = the **latest 2 exam years** per segment + **1 sample framework**; paid = the full archive.
+---
 
-**Intended architecture:**
-- Keep **free** content **static** (fast, public, SEO).
-- Move **paid** content into **Supabase Postgres behind Row-Level Security** — `supabase/schema.sql` defines `entitlements`, an `is_entitled()` check, paid content tables (`paid_prelims/mains/optional/frameworks`), and `orders`. RLS returns paid rows **only** to a logged-in user with an active entitlement (the real, un-bypassable lock).
-- **Login** required only for paid users (magic-link works without custom SMTP; OTP-code needs SMTP).
-- **Razorpay** Checkout → webhook → a Supabase **Edge Function** verifies the signature and writes the entitlement.
-- `load_paid.py` loads `data/paid/*` into the paid tables (regenerate the free/paid split from `data/*.json`: free = each segment's latest 2 years; paid = the rest).
+##  Architecture & Core Components
 
-⚠️ **A static/client-side paywall is bypassable** — the server-side gate (RLS + auth + webhook) is the actual protection. Don't ship content gating that lives only in the browser.
+The application follows Next.js App Router structure:
 
-## Not in this repo (intentionally excluded — see `.gitignore`)
-- `normalizer/` — Notion-pull scripts **and secrets** (a Notion token). Not needed to build the backend.
-- `data/raw_*.jsonl` — large raw Notion dumps (~216 MB). The cleaned `data/*.json` is what you need.
+```
+├── .env.local             # Local Supabase credentials
+├── data/                  # Static mock database JSON files
+├── public/                # Vendor dependencies, fonts, and icons
+├── src/
+│   ├── app/               # Next.js App router (prelims, mains, optional, practice, dashboard)
+│   ├── components/        # Shared components, Providers, MathContent, and Navbar
+│   ├── hooks/             # useContent.ts (React Query hooks for database entities)
+│   ├── lib/               # md.ts (markdown parsers and grading), supabase.ts (client)
+│   ├── store/             # useStore.ts (Zustand state store for user attempts and bookmarks)
+│   └── theme/             # theme.ts (Light and Dark MUI themes)
+```
+
+### 1. Hybrid Data Gating (`src/hooks/useContent.ts`)
+The app uses a hybrid querying strategy to serve content based on the user's paywall entitlement status:
+- **Free content (Public):** Loaded locally from `/public/data/*.json` to ensure blazing-fast SEO rendering.
+- **Paid content (PostgreSQL):** Pulled from protected Supabase tables (`paid_prelims`, `paid_mains`, `paid_optional`, `paid_frameworks`) using **Row-Level Security (RLS)** which returns records only if the user holds an active subscription entitlement.
+
+### 2. State & Persistence (`src/store/useStore.ts`)
+User stats, bookmark tags, revision flags, themes, and session tracking are managed globally via **Zustand** with persistent local storage.
+
+---
+
+##  Key Features & Improvements Added
+
+### 1. Interactive Mains & Optional Outline Drills
+- **"Try first" Action Canvas:** Users can click `✍️ Try first` on any Mains or Optional card to type a study outline instead of immediately looking at the answers. Includes a live word counter.
+- **Key-Point Grading Loop:** Upon clicking `Submit & check →`, the app runs an active recall regex keyword scan comparing the user's drafted points against the model answer outline. Hits and misses are displayed as high-contrast chips.
+- **High-Contrast Dark Mode Outlines:** Enhanced contrast for dark mode outlines using theme-aware border variables (`rgba(255,255,255,0.15)`) and custom container backgrounds (`#1C2541`) for reading comfort.
+
+### 2. Interactive Practice Test Modules
+- **Immediate Submit & Next Mechanics:** In the Prelims practice quiz, selecting an option and clicking `Submit & next →` instantly registers the result and advances to the next question, preserving a real exam-taking flow.
+- **Review & Reflect Dashboard:** At the end of the test, the score screen displays the percentage score alongside an accordion review layout. Users can expand each question card to view the exact chosen option, correct answer, and KaTeX mathematical explanation formulas.
+- **Mains Multi-Question Configuration:** Configure word limits, topics, question counts (`3`, `5`, `10`), and timed countdown modes prior to launching a multi-question drill session.
+
+### 3. Vercel & Production Build Optimizations
+- **SSR Query Client Provider:** Set up query client wrapping inside `Providers.tsx` during static compilation to prevent prerendering bailout failures.
+- **Suspense Boundary Wrappers:** Encapsulated page hooks in `<Suspense>` boundaries to ensure static exports compile with no errors.
+
+---
